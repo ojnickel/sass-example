@@ -1,9 +1,13 @@
 body {
   font-family: Verdana, Arial, sans-serif;
-  color: #322222; }
+  color: #222222; }
 
 h1, h2, h3, h4 {
   font-family: "Palatino Linotype", Georgia, serif; }
+
+h2 {
+  font-size: 22px;
+  font-weight: bold; }
 
 p {
   font-family: Verdana, Arial, sans-serif; }
@@ -11,15 +15,24 @@ p {
 a {
   color: #f27731; }
 
+a {
+  font-style: italic;
+  text-decoration: none; }
+
+.warning-button {
+  background-color: orange;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 12px; }
+
 #header {
+  border-radius: 6px;
   height: 60px;
   background-color: #170a48; }
   #header #main-menu li {
     display: inline; }
   #header #main-menu a {
     color: white; }
-  #header #logo {
-    color: #fff; }
 
 #main {
   width: 960px;
