@@ -1,6 +1,10 @@
+a {
+  font-style: italic;
+  text-decoration: none; }
+
 body {
   font-family: Verdana, Arial, sans-serif;
-  color: #222; }
+  color: #222222; }
 
 h1, h2, h3, h4 {
   font-family: "Palatino Linotype", Georgia, serif; }
@@ -15,18 +19,17 @@ p {
 a {
   color: #f27731; }
 
-a {
-  font-style: italic;
-  text-decoration: none; }
-
 .warning-button {
   background-color: orange;
   color: #fff;
-  border-radius: 6px;
   padding: 8px 12px; }
 
 #header {
-  border-radius: 6px;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
   height: 60px;
   background-color: #170a48; }
   #header #main-menu li {

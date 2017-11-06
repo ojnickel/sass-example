@@ -1,6 +1,9 @@
 @import "variables";
 @import "mixins";
 
+
+@include fancy-links;
+
 body {
   font-family: $text-font;
   color: $text-color;
@@ -22,16 +25,14 @@ a {
   color: $link-color;
 }
 
-@include fancy-links;
-
 .warning-button {
   @include warning;
-  @include rounded;
   padding: 8px 12px;
 }
 
 #header {
-  @include rounded;
+  @include box($border: 1px solid #fff, $radius: 12px);
+  @include box-shadow(2px 0px 4px #999, 1px 1px 6px $secondary-color);
   height: $header-height;
   background-color: $theme-color;
 
