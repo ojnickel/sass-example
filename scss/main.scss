@@ -4,6 +4,12 @@
 
 @include fancy-links;
 
+@include apply-to-ie-6 {
+  body {
+    font-size: 125%;
+  }
+}
+
 body {
   font-family: $text-font;
   color: $text-color;
