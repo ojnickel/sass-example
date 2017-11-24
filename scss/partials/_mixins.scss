@@ -1,4 +1,3 @@
-// === MEDIA QUERIES ===
 @mixin tiny-screens() {
   @media only screen and (max-width: 320px) {
     @content;
@@ -12,12 +11,12 @@
 }
 
 @mixin medium-screens() {
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 680px) {
     @content;
   }
 }
 
-@mixin medium-large-screens() {
+@mixin large-screens() {
   @media only screen and (max-width: 960px) {
     @content;
   }
@@ -31,6 +30,10 @@
 @mixin warning {
   background-color: orange;
   color: #fff;
+
+  &:hover {
+    background-color: lighten(orange, 10%);
+  }
 }
 
 @mixin box-shadow($shadows...) {

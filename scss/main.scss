@@ -16,7 +16,7 @@ body {
   font-family: $text-font;
   color: $text-color;
 
-  @include medium-large-screens {
+  @include large-screens {
     font-size: 125%;
   }
 }
@@ -35,6 +35,10 @@ p {
 
 a {
   color: $link-color;
+
+  &:hover {
+    color: darken($link-color, 15%);
+  }
 }
 
 .warning-button {
@@ -53,8 +57,17 @@ a {
     li {
       display: inline;
     }
+
     a {
       color: $menu-item-color;
+      padding: 6px 8px;
+      border-bottom: 1px solid transparentize(#fefefe, 1);
+      transition-timing-function: ease-in-out;
+      transition: border-bottom 0.5s;
+
+      &:hover {
+        border-bottom: 1px solid opacify(#fefefe, 0.5);
+      }
     }
   }
   
@@ -65,7 +78,7 @@ a {
 
 #main {
   width: $content-width;
-  @include medium-large-screens {
+  @include large-screens {
     width: auto;
     max-width: $content-width;
   }
