@@ -1,0 +1,3 @@
+10.3 - Creating your own functions
+--------------
+die Reihenfolge von Partials ist wichtig. Man mmuss sich bloss kümmern, um den .scss, wo die @imports hinkommen
