@@ -18,18 +18,10 @@
 @function colorsTheme ($theme) {
 
 }
-@function setTheme ($theme) {
-    @if $theme == Dark {
-        @each $var, $color in $colors {
-            $var: darken($color,60%); 
+
+// _functions.scss
+@function color($key) {
+      @if map-has-key($colors, $key) {
+           @return map-get($colors, $key);
         }
-    } @else if $theme == Light {
-        @each $var, $color in $colors {
-            $var: lighten($color,60%); 
-        }
-    } @else {
-        @each $var, $color in $colors {
-            $var: $color;
-        }
-    }
-};
+}

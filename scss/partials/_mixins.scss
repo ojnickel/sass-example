@@ -70,3 +70,20 @@
     text-decoration: none;
   }
 }
+
+
+@mixin setTheme ($theme) {
+    @if $theme == Dark {
+        @each $var, $color in $colors {
+            $var: darken($color,60%); 
+        }
+    } @else if $theme == Light {
+        @each $var, $color in $colors {
+            $var: lighten($color,60%); 
+        }
+    } @else {
+        @each $var, $color in $colors {
+            $var: $color;
+        }
+    }
+}
