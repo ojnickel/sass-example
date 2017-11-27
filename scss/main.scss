@@ -1,5 +1,6 @@
 @import "partials/variables";
 @import "partials/mixins";
+@import "partials/functions";
 
 @include google-font("Alegreya+Sans");
 @include google-font("Titillium+Web");
@@ -12,8 +13,10 @@
   }
 }
 
+
 body {
   font-family: $text-font;
+  font-size: em(18px);
   color: $text-color;
 
   @include large-screens {
@@ -62,11 +65,11 @@ a {
       color: $menu-item-color;
       padding: 6px 8px;
       border-bottom: 1px solid transparentize(#fefefe, 1);
-      transition-timing-function: ease-in-out;
       transition: border-bottom 0.5s;
+      transition-timing-function: ease-in-out;
 
       &:hover {
-        border-bottom: 1px solid opacify(#fefefe, 0.5);
+        border-bottom: 1px solid opacify(#fefefe, .5);
       }
     }
   }
@@ -86,13 +89,28 @@ a {
   margin-right: auto;
 
   #content {
+    float: left;
+    width: 6*$col;
   }
 
   #sidebar {
+    float: right;
+    width: 2*$col;
+
+    li {
+      list-style-type: none;
+      padding: 16px 20px;
+      border-bottom: 1px dashed #999;
+
+      &:hover {
+        background-color: #efefef;
+      }
+    }
   }
 }
 
 #footer {
+  clear: both;
   height: $footer-height;
   background-color: $ternary-color;
 }
