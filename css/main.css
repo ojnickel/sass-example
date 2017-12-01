@@ -37,6 +37,12 @@ a {
   a:hover {
     color: #ca510d; }
 
+.sub-title {
+  font-style: italic; }
+
+.sub-title {
+  font-size: 1.25em; }
+
 .warning-button, .cta-button, .super-cta-button {
   background-color: orange;
   color: #fff;
