@@ -16,8 +16,8 @@ a {
 
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
-  color: #222222;
-  font-size: 1.125em; }
+  font-size: 1.125em;
+  color: #222222; }
   @media only screen and (max-width: 960px) {
     body {
       font-size: 125%; } }
@@ -43,16 +43,21 @@ a {
 .sub-title {
   font-size: 1.25em; }
 
-.warning-button, .cta-button, .super-cta-button {
+.warning-button {
   background-color: orange;
   color: #fff;
   padding: 8px 12px; }
-  .warning-button:hover, .cta-button:hover, .super-cta-button:hover {
+  .warning-button:hover {
     background-color: #ffb733; }
 
 .cta-button, .super-cta-button {
+  background-color: orange;
+  color: #fff;
+  padding: 8px 12px;
   border-radius: 6px;
   font-weight: bold; }
+  .cta-button:hover, .super-cta-button:hover {
+    background-color: #ffb733; }
 
 .super-cta-button {
   font-size: 1.25em; }
