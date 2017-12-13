@@ -1,111 +1,93 @@
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
-a {
-  font-style: italic;
-  text-decoration: none; }
+/*
+Error: Invalid CSS after "            $": expected identifier, was "#{$var}-color: ..."
+        on line 24 of scss/partials/_functions.scss
+        from line 1 of scss/main.scss
 
-* html body {
-  font-size: 125%; }
+19: 
+20: }
+21: @function setTheme ($theme) {
+22:     @if $theme == Dark {
+23:         @each $var, $color in $colors {
+24:             $#{$var}-color: darken($color,60%); 
+25:         }
+26:     } @else if $theme == Light {
+27:         @each $var, $color in $colors {
+28:             $#{$var}-color: lighten($color,60%); 
+29:         }
 
-.error, .critical-error, .cta-button, .super-cta-button {
-  color: red; }
-
-.critical-error {
-  bottom: 1px solid red;
-  font-weight: bold; }
-
-body {
-  font-family: "Alegreya Sans", Arial, sans-serif;
-  font-size: 1.125em;
-  color: #fff;
-  background-color: #22222a; }
-  @media only screen and (max-width: 960px) {
-    body {
-      font-size: 125%; } }
-
-h1, h2, h3, h4 {
-  font-family: "Titillium Web", Georgia, serif; }
-
-h2 {
-  font-size: 22px;
-  font-weight: bold; }
-
-p {
-  font-family: "Alegreya Sans", Arial, sans-serif; }
-
-a {
-  color: #c24721; }
-  a:hover {
-    color: #812f16; }
-
-.sub-title {
-  font-style: italic; }
-
-.sub-title {
-  font-size: 1.25em; }
-
-.warning-button {
-  background-color: orange;
-  color: #fff;
-  padding: 8px 12px; }
-  .warning-button:hover {
-    background-color: #ffb733; }
-
-.cta-button, .super-cta-button {
-  background-color: orange;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-weight: bold; }
-  .cta-button:hover, .super-cta-button:hover {
-    background-color: #ffb733; }
-
-.super-cta-button {
-  font-size: 1.25em; }
-
-#header {
-  border-radius: 12px;
-  border: 1px solid #fff;
-  box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
-  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
-  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
-  height: 60px;
-  background-color: #42424a; }
-  #header #main-menu li {
-    display: inline; }
-  #header #main-menu a {
-    color: white;
-    padding: 6px 8px;
-    border-bottom: 1px solid rgba(254, 254, 254, 0);
-    transition: border-bottom 0.5s;
-    transition-timing-function: ease-in-out; }
-    #header #main-menu a:hover {
-      border-bottom: 1px solid #fefefe; }
-
-#main {
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto; }
-  @media only screen and (max-width: 960px) {
-    #main {
-      width: auto;
-      max-width: 960px; } }
-  #main #content {
-    float: left;
-    width: 69.75%; }
-  #main #sidebar {
-    float: right;
-    width: 23.25%; }
-    #main #sidebar li {
-      list-style-type: none;
-      padding: 1em 1.25em;
-      border-bottom: 1px dashed #999; }
-      #main #sidebar li:hover {
-        background-color: #efefef; }
-
-#footer {
-  clear: both;
-  height: 90px;
-  background-color: #698932; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+scss/partials/_functions.scss:24
+scss/main.scss:1
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:639:in `variable'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:319:in `each_directive'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:331:in `if_directive'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:695:in `block_child'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:272:in `function_directive'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:209:in `each'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/home/nickel/.gem/ruby/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"            $\": expected identifier, was \"#{$var}-color: ...\"\A         on line 24 of scss/partials/_functions.scss\A         from line 1 of scss/main.scss\A \A 19: \A 20: }\A 21: @function setTheme ($theme) {\A 22:     @if $theme == Dark {\A 23:         @each $var, $color in $colors {\A 24:             $#{$var}-color: darken($color,60%); \A 25:         }\A 26:     } @else if $theme == Light {\A 27:         @each $var, $color in $colors {\A 28:             $#{$var}-color: lighten($color,60%); \A 29:         }"; }

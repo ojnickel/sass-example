@@ -14,3 +14,21 @@
 @function strip-unit($value) {
   @return $value / ($value*0 + 1);
 }
+
+@function colorsTheme ($theme) {
+
+}
+@function setTheme ($theme) {
+    @if $theme == Dark {
+        @each $var, $color in $colors {
+            $#{$var}-color: darken($color,60%); 
+        }
+    } @else if $theme == Light {
+        @each $var, $color in $colors {
+            $#{$var}-color: lighten($color,60%); 
+        }
+    } @else {
+        @each $var, $color in $colors {
+            $#{$var}-color: $color;
+        }
+};
