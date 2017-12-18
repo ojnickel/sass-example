@@ -128,7 +128,11 @@ a {
     float: left;
     width: 6*$col;
   }
-
+  @include small-screens {
+        width: auto;
+        max-width: $content-width;
+        font-size: em(33px);
+  }
   #sidebar {
     float: right;
     width: 2*$col;
