@@ -75,7 +75,9 @@
 @mixin setTheme ($theme) {
     @if $theme == Dark {
         @each $var, $color in $colors {
-            $var: darken($color,60%); 
+            //$var: darken($color,60%); 
+            //$key: color($var); 
+            $colors: map-merge($colors, (#{$var}: darken($color,60%))); 
         }
     } @else if $theme == Light {
         @each $var, $color in $colors {
