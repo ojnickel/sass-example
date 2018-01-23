@@ -34,7 +34,7 @@ body {
   font-family: $text-font;
   font-size: em(18px);
   color: getColorTheme(text);
-  background-color: $body-background-color;
+  background-color: getColorTheme(body-background);
 
   @include large-screens {
     font-size: 125%;
@@ -54,7 +54,7 @@ p {
 }
 
 a {
-  color: $link-color;
+  color: getColorTheme(link);
 
   &:hover {
     color: darken($link-color, 15%);

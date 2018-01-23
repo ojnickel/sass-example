@@ -29,6 +29,12 @@
 
 @function getColorTheme ($key-color) {
     @if $theme == Dark {
-        @return darken(color($key-color),60%);
+        @if $key-color == text or $key-color == menu-item {
+            @return #fff;
+        } @else if $key-color == link {
+            @return #c24721;
+        } @else {
+            @return darken(color($key-color),80%);
+        }
     } @else if $theme == Light {
             $var: lighten($color,60%);}}
