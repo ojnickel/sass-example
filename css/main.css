@@ -7,6 +7,27 @@ a {
 * html body {
   font-size: 125%; }
 
+.c-text {
+  color: #fff; }
+
+.c-body-background {
+  color: #fff; }
+
+.c-theme {
+  color: #170a48; }
+
+.c-secondary {
+  color: #f27731; }
+
+.c-ternary {
+  color: #ccf962; }
+
+.c-link {
+  color: #f27731; }
+
+.c-menu-item {
+  color: white; }
+
 .error, .critical-error, .cta-button, .super-cta-button {
   color: red; }
 
@@ -17,7 +38,7 @@ a {
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
   font-size: 1.125em;
-  color: #fff;
+  color: #666666;
   background-color: #22222a; }
   @media only screen and (max-width: 960px) {
     body {

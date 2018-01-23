@@ -25,3 +25,10 @@
            @return map-get($colors, $key);
         }
 }
+
+
+@function getColorTheme ($key-color) {
+    @if $theme == Dark {
+        @return darken(color($key-color),60%);
+    } @else if $theme == Light {
+            $var: lighten($color,60%);}}
