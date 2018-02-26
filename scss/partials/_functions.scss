@@ -18,18 +18,23 @@
 @function colorsTheme ($theme) {
 
 }
-@function setTheme ($theme) {
+
+// _functions.scss
+@function color($key) {
+      @if map-has-key($colors, $key) {
+           @return map-get($colors, $key);
+        }
+}
+
+
+@function getColorTheme ($key-color) {
     @if $theme == Dark {
-        @each $var, $color in $colors {
-            $var: darken($color,60%); 
+        @if $key-color == text or $key-color == menu-item {
+            @return #fff;
+        } @else if $key-color == link {
+            @return #c24721;
+        } @else {
+            @return darken(color($key-color),80%);
         }
     } @else if $theme == Light {
-        @each $var, $color in $colors {
-            $var: lighten($color,60%); 
-        }
-    } @else {
-        @each $var, $color in $colors {
-            $var: $color;
-        }
-    }
-};
+            $var: lighten($color,60%);}}

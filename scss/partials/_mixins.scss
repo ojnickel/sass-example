@@ -5,7 +5,7 @@
 }
 
 @mixin small-screens() {
-  @media only screen and (max-width: 480px) {
+  @media only screen and (min-device-width : 375px)  and (max-device-width: 667px) {
     @content;
   }
 }
@@ -69,4 +69,23 @@
     font-style: italic;
     text-decoration: none;
   }
+}
+
+
+@mixin setTheme ($theme) {
+    @if $theme == Dark {
+        @each $var, $color in $colors {
+            //$var: darken($color,60%); 
+            //$key: color($var); 
+            $colors: map-merge($colors, (#{$var}: darken($color,60%))); 
+        }
+    } @else if $theme == Light {
+        @each $var, $color in $colors {
+            $var: lighten($color,60%); 
+        }
+    } @else {
+        @each $var, $color in $colors {
+            $var: $color;
+        }
+    }
 }
