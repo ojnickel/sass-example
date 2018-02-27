@@ -23,5 +23,5 @@ body {
 .sidebar-left {
   display: none;
   
-  span (1 of 2);
+  @include span (1 of 2);
 }
