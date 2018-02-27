@@ -1,1 +1,8 @@
-@import "partials/normalize"
+@import 'partials/normalize';
+@import 'partials/var';
+
+body {
+    background-color:   $bgc;
+    font: 100% $font;
+    color: #fff;
+}

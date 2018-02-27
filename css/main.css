@@ -443,3 +443,10 @@ textarea {
   font: inherit;
   /* 2 */
 }
+
+/* line 4, ../scss/main.scss */
+body {
+  background-color: #222;
+  font: 100% Helvetica, sans-serif;
+  color: #fff;
+}
