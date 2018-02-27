@@ -1,8 +1,27 @@
 @import 'partials/normalize';
+@import 'susy';
+@import 'breakpoint';
 @import 'partials/var';
+
+$susy: (
+  columns: 2,
+  debug: (image: show),
+  global-box-sizing: border-sizing
+);
+
+@include border-box-sizing;
 
 body {
     background-color:   $bgc;
     font: 100% $font;
     color: #fff;
+}
+
+.container {
+    @include container();
+}
+.sidebar-left {
+  display: none;
+  
+  span (1 of 2);
 }
