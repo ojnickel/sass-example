@@ -1,10 +1,11 @@
 @import 'partials/normalize';
 @import 'susy';
 @import 'breakpoint';
+@import "compass";
 @import 'partials/var';
 
 $susy: (
-  columns: 2,
+  columns: 4,
   debug: (image: show),
   global-box-sizing: border-sizing
 );
@@ -22,6 +23,28 @@ body {
 }
 .sidebar-left {
   display: none;
-  
-  @include span (1 of 2);
+  background-color: $sdl;
+  height: 80vh;
+  @include breakpoint ($medium-screen)  {
+      display: block;
+      @include span (1 of 4);
+  }
+}
+.main {
+    height: 80vh;
+    @include breakpoint ($medium-screen)  {
+      @include span (3 of 4);
+      @include column-count (2);
+  }
+}
+article {
+    overflow: auto;
+    padding: 3 * gutter();
+    background-color: $cc;
+}
+.footer {
+    height: 20vh;
+    background-color: #fff;
+    color: #000;
+    clear: both;
 }
