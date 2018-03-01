@@ -5,7 +5,7 @@
 @import 'partials/var';
 
 $susy: (
-  columns: 4,
+  columns: 2,
   debug: (image: show),
   global-box-sizing: border-sizing
 );
@@ -22,24 +22,27 @@ body {
     @include container();
 }
 .sidebar-left {
+  width: span(1 of 4) ! important;
   display: none;
   background-color: $sdl;
   height: 80vh;
   @include breakpoint ($medium-screen)  {
       display: block;
-      @include span (1 of 4);
+      @include span (1 of 2 first);
   }
 }
 .main {
     height: 80vh;
+    float: right;
     @include breakpoint ($medium-screen)  {
-      @include span (3 of 4);
-      @include column-count (2);
+      @include span (1 of 2 last);
+      //@include column-count (2);
   }
 }
 article {
+
     overflow: auto;
-    padding: 3 * gutter();
+    padding: gutter();
     background-color: $cc;
 }
 .footer {
