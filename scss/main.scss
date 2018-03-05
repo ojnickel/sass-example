@@ -20,7 +20,8 @@ body {
 }
 
 .container {
-    @include container();
+  display: flex;
+   @include container();
 }
 .sidebar-left {
 //  height: 16rem;
@@ -30,14 +31,16 @@ body {
   @include breakpoint ($medium-screen)  {
       display: block;
       @include span (1 of 5 first);
+      //width: span(1);
   }
 }
 .main {
 //    height: 16rem;
     //height: 80vh;
-    float: right;
+//    float: right;
    @include breakpoint ($medium-screen)  {
       @include span (4 last);
+      //width: span(4);
   }
 }
 article {
@@ -49,7 +52,8 @@ article {
     background-color: $cc;
 }
 .footer {
-    height: 4rem;
+//    @include span(5);
+//    height: 4rem;
     //height: 20vh;
     background-color: lighten($bgc, 50);
     color: #000;
