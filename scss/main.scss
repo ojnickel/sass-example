@@ -36,13 +36,14 @@ body {
 //    height: 16rem;
     //height: 80vh;
     float: right;
-    @include breakpoint ($medium-screen)  {
-      @include span (4 of 5 last);
-      //@include column-count (2);
+   @include breakpoint ($medium-screen)  {
+      @include span (4 last);
   }
 }
 article {
-
+   @include breakpoint ($medium-screen)  {
+      @include column-count (2);
+  }
     overflow: auto;
     padding: gutter();
     background-color: $cc;
