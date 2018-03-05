@@ -444,7 +444,7 @@ textarea {
   /* 2 */
 }
 
-/* line 21, ../../../../home/ossi/.gem/ruby/2.5.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../../home/nickel/.gem/ruby/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -474,7 +474,7 @@ body {
   background-clip: content-box, border-box;
   background-position: left top;
 }
-/* line 12, ../../../../home/ossi/.gem/ruby/2.5.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../home/nickel/.gem/ruby/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .container:after {
   content: " ";
   display: block;
