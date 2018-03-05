@@ -444,21 +444,21 @@ textarea {
   /* 2 */
 }
 
-/* line 21, ../../../../../../../../home/nickel/.gem/ruby/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../home/ossi/.gem/ruby/2.5.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 15, ../scss/main.scss */
+/* line 16, ../scss/main.scss */
 body {
   background-color: #222;
   font: 100% Helvetica, sans-serif;
   color: #fff;
 }
 
-/* line 21, ../scss/main.scss */
+/* line 22, ../scss/main.scss */
 .container {
   max-width: 100%;
   margin-left: auto;
@@ -469,32 +469,31 @@ body {
   background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
   background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
   background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-  background-size: 55.55556%, 100% 24px;
+  background-size: 20.83333%, 100% 24px;
   background-origin: content-box, border-box;
   background-clip: content-box, border-box;
   background-position: left top;
 }
-/* line 12, ../../../../../../../../home/nickel/.gem/ruby/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../home/ossi/.gem/ruby/2.5.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .container:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 24, ../scss/main.scss */
+/* line 25, ../scss/main.scss */
 .sidebar-left {
-  width: 21.05263% !important;
   display: none;
   background-color: rgba(100, 60, 69, 0.8);
   height: 80vh;
 }
 @media (min-width: 720px) {
-  /* line 24, ../scss/main.scss */
+  /* line 25, ../scss/main.scss */
   .sidebar-left {
     display: block;
-    width: 44.44444%;
+    width: 16.66667%;
     float: left;
-    margin-right: 11.11111%;
+    margin-right: 4.16667%;
   }
 }
 
@@ -506,7 +505,7 @@ body {
 @media (min-width: 720px) {
   /* line 34, ../scss/main.scss */
   .main {
-    width: 44.44444%;
+    width: 79.16667%;
     float: right;
     margin-right: 0;
   }
@@ -515,7 +514,7 @@ body {
 /* line 42, ../scss/main.scss */
 article {
   overflow: auto;
-  padding: 11.11111%;
+  padding: 4.16667%;
   background-color: #369;
 }
 
