@@ -5,7 +5,8 @@
 @import 'partials/var';
 
 $susy: (
-  columns: 2,
+  columns: 5,
+  gutter: 1/6,
   debug: (image: show),
   global-box-sizing: border-sizing
 );
@@ -22,20 +23,19 @@ body {
     @include container();
 }
 .sidebar-left {
-  width: span(1 of 4) ! important;
   display: none;
   background-color: $sdl;
   height: 80vh;
   @include breakpoint ($medium-screen)  {
       display: block;
-      @include span (1 of 2 first);
+      @include span (1 of 5 first);
   }
 }
 .main {
     height: 80vh;
     float: right;
     @include breakpoint ($medium-screen)  {
-      @include span (1 of 2 last);
+      @include span (4 of 5 last);
       //@include column-count (2);
   }
 }
