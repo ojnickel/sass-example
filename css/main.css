@@ -444,7 +444,7 @@ textarea {
   /* 2 */
 }
 
-/* line 21, ../../../../home/ossi/.gem/ruby/2.5.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../../home/nickel/.gem/ruby/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -461,6 +461,7 @@ body {
 /* line 22, ../scss/main.scss */
 .container {
   display: flex;
+  flex-direction: column;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -475,20 +476,20 @@ body {
   background-clip: content-box, border-box;
   background-position: left top;
 }
-/* line 12, ../../../../home/ossi/.gem/ruby/2.5.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../home/nickel/.gem/ruby/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .container:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 26, ../scss/main.scss */
+/* line 27, ../scss/main.scss */
 .sidebar-left {
   display: none;
   background-color: rgba(100, 60, 69, 0.8);
 }
 @media (min-width: 720px) {
-  /* line 26, ../scss/main.scss */
+  /* line 27, ../scss/main.scss */
   .sidebar-left {
     display: block;
     width: 16.66667%;
@@ -497,8 +498,12 @@ body {
   }
 }
 
+/* line 38, ../scss/main.scss */
+.main {
+  flex: 1;
+}
 @media (min-width: 720px) {
-  /* line 37, ../scss/main.scss */
+  /* line 38, ../scss/main.scss */
   .main {
     width: 79.16667%;
     float: right;
@@ -506,14 +511,14 @@ body {
   }
 }
 
-/* line 46, ../scss/main.scss */
+/* line 48, ../scss/main.scss */
 article {
   overflow: auto;
   padding: 4.16667%;
   background-color: #369;
 }
 @media (min-width: 720px) {
-  /* line 46, ../scss/main.scss */
+  /* line 48, ../scss/main.scss */
   article {
     -moz-column-count: 2;
     -webkit-column-count: 2;
@@ -521,7 +526,7 @@ article {
   }
 }
 
-/* line 54, ../scss/main.scss */
+/* line 56, ../scss/main.scss */
 .footer {
   background-color: #a2a2a2;
   color: #000;
