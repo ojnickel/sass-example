@@ -17,12 +17,14 @@ body {
     background-color:   $bgc;
     font: 100% $font;
     color: #fff;
+    height: 100%;
+    width: 100%;
 }
 
 .container {
    display: flex;
    flex-direction: column;
-   @include container();
+   //@include container();
 }
 .sidebar-left {
 //  height: 16rem;
@@ -31,22 +33,26 @@ body {
   //height: 80vh;
   @include breakpoint ($medium-screen)  {
       display: block;
-      @include span (1 of 5 first);
-      //width: span(1);
+     flex: 1;
+      // @include span (1 of 5 first);
+     width: span(1);
   }
 }
 .main {
-    flex: 1;
+   display: flex;
+   flex-direction: row;
+   flex-grow: 1;
 //    height: 16rem;
     //height: 80vh;
 //    float: right;
    @include breakpoint ($medium-screen)  {
-      @include span (4 last);
+      //@include span (4 last);
       //width: span(4);
   }
 }
 article {
    @include breakpoint ($medium-screen)  {
+      width: span(4);
       @include column-count (2);
   }
     overflow: auto;
@@ -54,10 +60,11 @@ article {
     background-color: $cc;
 }
 .footer {
-//    @include span(5);
-//    height: 4rem;
-    //height: 20vh;
+    flex-shrink: 0;
+    //    @include span(5);
+    //    height: 4rem;
+    height: 20vh;
     background-color: lighten($bgc, 50);
     color: #000;
-    clear: both;
+    //    clear: both;
 }
