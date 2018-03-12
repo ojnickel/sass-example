@@ -444,7 +444,7 @@ textarea {
   /* 2 */
 }
 
-/* line 21, ../../../../../../../../home/nickel/.gem/ruby/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../home/ossi/.gem/ruby/2.5.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -489,6 +489,8 @@ body {
 
 /* line 53, ../scss/main.scss */
 article {
+  flex-grow: 1;
+  border: 1px solid #fff;
   overflow: auto;
   padding: 4.16667%;
   background-color: #369;
@@ -503,7 +505,7 @@ article {
   }
 }
 
-/* line 62, ../scss/main.scss */
+/* line 64, ../scss/main.scss */
 .footer {
   flex-shrink: 0;
   height: 20vh;

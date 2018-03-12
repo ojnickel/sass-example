@@ -51,6 +51,8 @@ body {
   }
 }
 article {
+   flex-grow: 1;
+    border: 1px solid #fff;
    @include breakpoint ($medium-screen)  {
       width: span(4);
       @include column-count (2);
