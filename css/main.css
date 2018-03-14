@@ -513,13 +513,15 @@ article {
 
 /* line 69, ../scss/main.scss */
 .footer {
+  padding: 8.33333%;
+  background-color: #369;
   flex-shrink: 0;
   height: 20vh;
   background-color: #a2a2a2;
   color: #000;
 }
 
-/* line 78, ../scss/main.scss */
+/* line 80, ../scss/main.scss */
 .link {
   background-color: #987;
   color: #000999;
