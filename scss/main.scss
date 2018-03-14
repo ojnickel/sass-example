@@ -46,20 +46,13 @@ body {
    display: flex;
    flex-direction: column;
    flex-grow: 1;
-//    height: 16rem;
-    //height: 80vh;
-//    float: right;
-   @include breakpoint ($medium-screen)  {
-      //@include span (4 last);
-      //width: span(4);
-  }
+   width: 100%;
 }
 article {
    flex-grow: 1;
     border: 1px solid #fff;
    @include breakpoint ($iphone) {
-       width: 100%;
-       font-size: 30px;
+      font-size: 8vw;
    }  
    @include breakpoint ($medium-screen)  {
       width: span(5);

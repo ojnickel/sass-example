@@ -490,9 +490,10 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  width: 100%;
 }
 
-/* line 57, ../scss/main.scss */
+/* line 51, ../scss/main.scss */
 article {
   flex-grow: 1;
   border: 1px solid #fff;
@@ -501,14 +502,13 @@ article {
   background-color: #369;
 }
 @media (min-width: 375px) and (max-width: 667px) {
-  /* line 57, ../scss/main.scss */
+  /* line 51, ../scss/main.scss */
   article {
-    width: 100%;
-    font-size: 30px;
+    font-size: 8vw;
   }
 }
 @media (min-width: 720px) {
-  /* line 57, ../scss/main.scss */
+  /* line 51, ../scss/main.scss */
   article {
     width: 100%;
     -moz-column-count: 2;
@@ -517,7 +517,7 @@ article {
   }
 }
 
-/* line 72, ../scss/main.scss */
+/* line 65, ../scss/main.scss */
 .footer {
   padding: 8.33333%;
   flex-shrink: 0;
@@ -525,7 +525,7 @@ article {
   color: #000;
 }
 
-/* line 79, ../scss/main.scss */
+/* line 72, ../scss/main.scss */
 .link {
   background-color: #987;
   color: #000999;
