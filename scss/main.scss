@@ -57,6 +57,10 @@ body {
 article {
    flex-grow: 1;
     border: 1px solid #fff;
+   @include breakpoint ($iphone) {
+       width: 100%;
+       font-size: 30px;
+   }  
    @include breakpoint ($medium-screen)  {
       width: span(5);
       @include column-count (2);
