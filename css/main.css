@@ -461,23 +461,24 @@ body {
   background-color: #222;
   font: 100% Helvetica, sans-serif;
   color: #fff;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* line 28, ../scss/main.scss */
+/* line 29, ../scss/main.scss */
 .container {
   display: flex;
   flex-direction: row;
 }
 
-/* line 33, ../scss/main.scss */
+/* line 34, ../scss/main.scss */
 .sidebar-left {
   display: none;
   background-color: rgba(100, 60, 69, 0.8);
 }
 @media (min-width: 720px) {
-  /* line 33, ../scss/main.scss */
+  /* line 34, ../scss/main.scss */
   .sidebar-left {
     display: block;
     flex: 1;
@@ -485,14 +486,14 @@ body {
   }
 }
 
-/* line 45, ../scss/main.scss */
+/* line 46, ../scss/main.scss */
 .main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-/* line 57, ../scss/main.scss */
+/* line 58, ../scss/main.scss */
 article {
   flex-grow: 1;
   border: 1px solid #fff;
@@ -501,7 +502,7 @@ article {
   background-color: #369;
 }
 @media (min-width: 720px) {
-  /* line 57, ../scss/main.scss */
+  /* line 58, ../scss/main.scss */
   article {
     width: 100%;
     -moz-column-count: 2;
@@ -510,7 +511,7 @@ article {
   }
 }
 
-/* line 68, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
 .footer {
   padding: 12.5%;
   flex-shrink: 0;
@@ -519,7 +520,7 @@ article {
   color: #000;
 }
 
-/* line 78, ../scss/main.scss */
+/* line 79, ../scss/main.scss */
 .link {
   background-color: #987;
   color: #000999;

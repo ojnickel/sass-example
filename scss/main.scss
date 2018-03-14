@@ -67,6 +67,7 @@ article {
     background-color: $cc;
 }
 .footer {
+    padding: gutter()*3;
     flex-shrink: 0;
     //    @include span(5);
     //    height: 4rem;
