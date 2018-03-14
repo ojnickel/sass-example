@@ -70,7 +70,21 @@ article {
     //    clear: both;
 }
 .link {
-    background-color: #987;
     color: #000999;
     border: 1px solid #000;
+}
+
+ul {
+    list-style-type: none;
+    li  {
+      background-color: #987;
+      &:hover {
+        background-color: #111;
+        color: #fff;
+      }
+      &:active{
+        background-color: $cc;
+        color: #fff;
+      }
+    }
 }
