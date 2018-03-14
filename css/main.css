@@ -444,7 +444,7 @@ textarea {
   /* 2 */
 }
 
-/* line 21, ../../../../../../../../home/nickel/.gem/ruby/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../home/ossi/.gem/ruby/2.5.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -461,24 +461,23 @@ body {
   background-color: #222;
   font: 100% Helvetica, sans-serif;
   color: #fff;
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* line 29, ../scss/main.scss */
+/* line 28, ../scss/main.scss */
 .container {
   display: flex;
   flex-direction: row;
 }
 
-/* line 34, ../scss/main.scss */
+/* line 33, ../scss/main.scss */
 .sidebar-left {
   display: none;
   background-color: rgba(100, 60, 69, 0.8);
 }
 @media (min-width: 720px) {
-  /* line 34, ../scss/main.scss */
+  /* line 33, ../scss/main.scss */
   .sidebar-left {
     display: block;
     flex: 1;
@@ -486,14 +485,14 @@ body {
   }
 }
 
-/* line 46, ../scss/main.scss */
+/* line 45, ../scss/main.scss */
 .main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-/* line 58, ../scss/main.scss */
+/* line 57, ../scss/main.scss */
 article {
   flex-grow: 1;
   border: 1px solid #fff;
@@ -502,7 +501,7 @@ article {
   background-color: #369;
 }
 @media (min-width: 720px) {
-  /* line 58, ../scss/main.scss */
+  /* line 57, ../scss/main.scss */
   article {
     width: 100%;
     -moz-column-count: 2;
@@ -511,8 +510,9 @@ article {
   }
 }
 
-/* line 69, ../scss/main.scss */
+/* line 68, ../scss/main.scss */
 .footer {
+  padding: 12.5%;
   flex-shrink: 0;
   height: 20vh;
   background-color: #a2a2a2;
