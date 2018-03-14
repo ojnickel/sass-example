@@ -70,9 +70,6 @@ article {
     padding: gutter()*2;
     background-color: $cc;
     flex-shrink: 0;
-    //    @include span(5);
-    //    height: 4rem;
-    height: 20vh;
     background-color: lighten($bgc, 50);
     color: #000;
     //    clear: both;
