@@ -465,19 +465,22 @@ body {
   flex-direction: column;
 }
 
-/* line 28, ../scss/main.scss */
-.container {
-  display: flex;
-  flex-direction: row;
+@media (min-width: 720px) {
+  /* line 28, ../scss/main.scss */
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-/* line 33, ../scss/main.scss */
+/* line 35, ../scss/main.scss */
 .sidebar-left {
-  display: none;
+  display: flex;
   background-color: rgba(100, 60, 69, 0.8);
+  justify-content: center;
 }
 @media (min-width: 720px) {
-  /* line 33, ../scss/main.scss */
+  /* line 35, ../scss/main.scss */
   .sidebar-left {
     display: block;
     flex: 1;
@@ -485,7 +488,7 @@ body {
   }
 }
 
-/* line 45, ../scss/main.scss */
+/* line 48, ../scss/main.scss */
 .main {
   display: flex;
   flex-direction: column;
@@ -493,7 +496,7 @@ body {
   width: 100%;
 }
 
-/* line 51, ../scss/main.scss */
+/* line 54, ../scss/main.scss */
 article {
   flex-grow: 1;
   border: 1px solid #fff;
@@ -502,13 +505,13 @@ article {
   background-color: #369;
 }
 @media (min-width: 375px) and (max-width: 667px) {
-  /* line 51, ../scss/main.scss */
+  /* line 54, ../scss/main.scss */
   article {
     font-size: 8vw;
   }
 }
 @media (min-width: 720px) {
-  /* line 51, ../scss/main.scss */
+  /* line 54, ../scss/main.scss */
   article {
     width: 100%;
     -moz-column-count: 2;
@@ -517,7 +520,7 @@ article {
   }
 }
 
-/* line 65, ../scss/main.scss */
+/* line 68, ../scss/main.scss */
 .footer {
   padding: 8.33333%;
   flex-shrink: 0;
@@ -525,27 +528,32 @@ article {
   color: #000;
 }
 
-/* line 72, ../scss/main.scss */
-.link {
-  color: #000999;
-  border: 1px solid #000;
-}
-
-/* line 77, ../scss/main.scss */
+/* line 78, ../scss/main.scss */
 ul {
   list-style-type: none;
 }
-/* line 79, ../scss/main.scss */
+/* line 80, ../scss/main.scss */
 ul li {
+  border: 1px solid #fff;
   background-color: #987;
 }
-/* line 81, ../scss/main.scss */
+/* line 83, ../scss/main.scss */
 ul li:hover {
   background-color: #111;
   color: #fff;
 }
-/* line 85, ../scss/main.scss */
-ul li:active {
-  background-color: #369;
-  color: #fff;
+/* line 87, ../scss/main.scss */
+ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+/* line 91, ../scss/main.scss */
+ul li a:visited {
+  color: #ccc;
+  text-decoration: none;
+}
+/* line 95, ../scss/main.scss */
+ul li a:hover {
+  color: #369;
+  text-decoration: none;
 }

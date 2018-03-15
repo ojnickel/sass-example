@@ -26,14 +26,17 @@ body {
 }
 
 .container {
+  @include breakpoint ($medium-screen)  {
    display: flex;
    flex-direction: row;
    //@include container();
+  }
 }
 .sidebar-left {
 //  height: 16rem;
-  display: none;
+  display: flex;
   background-color: $sdl;
+  justify-content: center;
   //height: 80vh;
   @include breakpoint ($medium-screen)  {
       display: block;
@@ -70,21 +73,29 @@ article {
     //    clear: both;
 }
 .link {
-    color: #000999;
-    border: 1px solid #000;
 }
 
 ul {
     list-style-type: none;
     li  {
-      background-color: #987;
-      &:hover {
-        background-color: #111;
-        color: #fff;
-      }
-      &:active{
-        background-color: $cc;
-        color: #fff;
-      }
+        border: 1px solid #fff;
+        background-color: #987;
+          &:hover {
+             background-color: #111;
+             color: #fff;
+          }
+        a { 
+          color: #ccc;
+          text-decoration: none;
+
+          &:visited {
+              color: #ccc;
+              text-decoration: none;
+          }
+          &:hover  {
+              color: $cc;
+              text-decoration: none;
+          }
+        }
     }
 }
