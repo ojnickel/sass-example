@@ -1,6 +1,7 @@
 require 'susy'
 require 'breakpoint'
 require 'compass'
+require 'font-awesome-sass'
 
 preferred_syntax = :scss
 http_path = '/'
