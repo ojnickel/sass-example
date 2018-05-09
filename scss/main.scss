@@ -1,19 +1,9 @@
 @import 'partials/normalize';
-@import 'susy';
 @import 'breakpoint';
 @import "compass";
 @import 'partials/var';
 @import "font-awesome-compass";
 @import "font-awesome";
-
-$susy: (
-  columns: 5,
-  gutter: 1/6,
-  debug: (image: show),
-  global-box-sizing: border-sizing
-);
-
-@include border-box-sizing;
 
 html {
     height: 100%;
